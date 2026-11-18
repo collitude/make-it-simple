@@ -1,6 +1,8 @@
 # Make It Simple
 
-**Versione 1.0.0.** Una skill per Codex che chiede all’agente di arrivare al risultato per la via affidabile più breve. Se il file è indicato, si parte da quel file. Se basta eseguire il programma per confermare che il risultato è già corretto, il lavoro finisce lì. Un controllo ulteriore serve quando risponde a una domanda ancora aperta, è obbligatorio oppure è stato richiesto. [Leggi le istruzioni della skill](make-it-simple/SKILL.md).
+**Versione 1.1.0.** Una skill per Codex che chiede all’agente di arrivare al risultato per la via affidabile più breve. Se il file è indicato, si parte da quel file. Se basta eseguire il programma per confermare che il risultato è già corretto, il lavoro finisce lì. Un controllo ulteriore serve quando risponde a una domanda ancora aperta, è obbligatorio oppure è stato richiesto. [Leggi le istruzioni della skill](make-it-simple/SKILL.md).
+
+La stessa regola vale per ciò che si consegna. Il lettore trova subito il risultato e le eventuali decisioni da prendere. Se si tratta di una simulazione, lo capisce dalla prima descrizione del risultato. Log e identificativi utili all’assistenza possono stare in una breve nota tecnica in fondo. Quando il destinatario chiede codice o dati in un formato preciso, la skill rispetta quel formato.
 
 ## Esempi
 
@@ -24,7 +26,7 @@ else
 fi
 ```
 
-Apri una nuova conversazione Codex nel progetto in cui vuoi usarla. Per aggiornare un’installazione precedente, esegui `git pull --ff-only` nel clone e confronta il suo `make-it-simple/SKILL.md` con la copia personale. Per passare dalla prima edizione alla 1.0.0 basta aggiornare quel file, conservando prima le eventuali personalizzazioni.
+Apri una nuova conversazione Codex nel progetto in cui vuoi usarla. Per aggiornare un’installazione precedente, esegui `git pull --ff-only` nel clone e confronta il suo `make-it-simple/SKILL.md` con la copia personale. Per passare dalla 1.0.0 alla 1.1.0 basta aggiornare quel file, conservando prima le eventuali personalizzazioni.
 
 ## Utilizzo
 
