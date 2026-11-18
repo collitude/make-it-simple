@@ -1,11 +1,12 @@
 # Make It Simple
 
-Una skill per Codex per portare a termine modifiche circoscritte. Invita l’agente a riutilizzare ciò che funziona, intervenire sui punti che servono e verificare il risultato. I controlli di sicurezza e il livello di approfondimento richiesto fanno parte del lavoro. [Leggi le istruzioni della skill](make-it-simple/SKILL.md).
+**Versione 1.0.0.** Una skill per Codex che chiede all’agente di arrivare al risultato per la via affidabile più breve. Se il file è indicato, si parte da quel file. Se basta eseguire il programma per confermare che il risultato è già corretto, il lavoro finisce lì. Un controllo ulteriore serve quando risponde a una domanda ancora aperta, è obbligatorio oppure è stato richiesto. [Leggi le istruzioni della skill](make-it-simple/SKILL.md).
 
 ## Esempi
 
-- **Duplicare uno Zap per una nuova campagna.** copia il flusso esistente, aggiorna i campi della campagna e verifica la copia, senza ridisegnare l'automazione.
-- **Correggere un errore nelle date.** individua la causa, applica una correzione mirata ed esegui le verifiche pertinenti.
+- **Spostare un promemoria.** Cambiare l’anticipo delle quote soci e verificare che il valore delle fatture fornitori sia rimasto identico.
+- **Duplicare un flusso.** Riutilizzare il flusso esistente, aggiornare identità e riferimenti, lasciare la copia nello stato richiesto.
+- **Controllare un calcolo.** Se viene chiesto il prezzo finale di un singolo articolo, eseguire quel caso. Se vengono richiesti tre importi, verificare tutti e tre.
 
 ## Installazione
 
@@ -23,11 +24,11 @@ else
 fi
 ```
 
-Apri una nuova conversazione Codex nel progetto in cui vuoi usarla.
+Apri una nuova conversazione Codex nel progetto in cui vuoi usarla. Per aggiornare un’installazione precedente, esegui `git pull --ff-only` nel clone e confronta il suo `make-it-simple/SKILL.md` con la copia personale. Per passare dalla prima edizione alla 1.0.0 basta aggiornare quel file, conservando prima le eventuali personalizzazioni.
 
 ## Utilizzo
 
-Puoi richiamarla direttamente nella richiesta.
+Puoi descrivere normalmente la modifica oppure scegliere la skill in modo esplicito.
 
 ```text
 $make-it-simple Correggi questo errore mantenendo la modifica circoscritta.
